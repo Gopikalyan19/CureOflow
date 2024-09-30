@@ -1,0 +1,23 @@
+
+
+#drug-list {
+    margin-top: 20px;
+}
+
+.drug-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.expired {
+    background-color: #ff9999;
+}
+
+.low-quantity {
+    background-color: #ffff99;
+}
+
+.high-value {
+    background-color: #c6efce;
+}

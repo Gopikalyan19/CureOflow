@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cure'O flow  </title>
+  <link rel="stylesheet" href="dist/styles.css" />
+  <script src="dist/script.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10">
+    <div class="flex items-center">
+      <span class="bg-underline1 bg-left-bottom bg-no-repeat pb-2 bg-100%">
+        Cure'O Flow
+      </span>
+      
+    </div>
+    <ul class="font-montserrat items-center hidden md:flex">
+      <li class="mx-3 ">
+        <a class="growing-underline" href="index.html">
+          Home
+        </a>
+      </li>
+      <li class="growing-underline mx-3">
+        <a href="#how">How it works</a>
+      </li>
+      <li class="growing-underline mx-3">
+        <a href="#features">Features</a>
+      </li>
+     
+    </ul>
+    <div class="font-montserrat hidden md:block">
+       <a href="Dashboard/pages/sign-in.html"><button class="mr-6">Login</button></a>
+      <a href="Dashboard/pages/sign-up.html"><button class="py-2 px-4 text-white bg-black rounded-3xl">
+        Signup
+      </button></a>
+    </div>
+    <div id="showMenu" class="md:hidden">
+      <img src='dist/assets/logos/Menu.svg' alt="Menu icon" />
+    </div>
+  </nav>
+  <div id='mobileNav' class="hidden px-4 py-6 fixed top-0 left-0 h-full w-full bg-secondary z-20 animate-fade-in-down">
+    <div id="hideMenu" class="flex justify-end">
+      <img src='dist/assets/logos/Cross.svg' alt="" class="h-16 w-16" />
+    </div>
+    <ul class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl">
+      <li class="my-6">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="my-6">
+        <a href="#how">How it works</a>
+      </li>
+      <li class="my-6">
+        <a href="#features">Features</a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section
+    class="pt-24 md:mt-0 md:h-screen flex flex-col justify-center text-center md:text-left md:flex-row md:justify-between md:items-center lg:px-48 md:px-12 px-4 bg-secondary">
+    <div class="md:flex-1 md:mr-10">
+      <h1 class="font-pt-serif text-5xl font-bold mb-7">
+        A trusted pharmaceutical 
+        <span class=" bg-left-bottom bg-no-repeat pb-2 bg-100%">
+          courier services
+        </span>
+      </h1>
+      <p class="font-pt-serif font-normal mb-7">
+        We deliver your products safely to
+        your Place in a reasonable time.
+      </p>
+      <div class="font-montserrat">
+        <a href="Dashboard/pages/sign-in.html"><button class="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2">
+          Get Started
+        </button></a>
+        <!----------
+        <button class="px-6 py-4 border-2 border-black border-solid rounded-lg">
+          Secondary action
+        </button>  ------------>
+      </div>
+    </div>
+    <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
+      <div class="relative">
+        <img src='dist/assets/Highlight1.svg' alt="" class="absolute -top-16 -left-10" />
+      </div>
+      <img src='img/Paper_Plane_Fast_Delivery_Service_Flat_Illustration-removebg-preview.png' alt="" />
+      <div class="relative">
+        <img src='dist/assets/Highlight2.svg' alt="" class="absolute -bottom-10 -right-6" />
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="bg-black text-white sectionSize" id="how">
+    <div>
+      <h2 class="secondaryTitle bg-underline2 bg-100%">How it works</h2>
+    </div>
+    <div class="flex flex-col md:flex-row">
+      <div class="flex-1 mx-8 flex flex-col items-center my-4">
+        <div class="border-2 rounded-full bg-secondary text-black h-12 w-12 flex justify-center items-center mb-3">
+          1
+        </div>
+        <h3 class="font-montserrat font-medium text-xl mb-2">Track and Monitor Inventory</h3>
+        <p class="text-center font-montserrat">
+          Our system provides real-time visibility into your drug inventory across multiple locations. With an intuitive dashboard, you can easily track stock levels, drug expiration dates, and batch numbers.</p>
+      </div>
+      <div class="flex-1 mx-8 flex flex-col items-center my-4">
+        <div class="border-2 rounded-full bg-secondary text-black h-12 w-12 flex justify-center items-center mb-3">
+          2
+        </div>
+        <h3 class="font-montserrat font-medium text-xl mb-2">Automate Supply Orders </h3>
+        <p class="text-center font-montserrat">
+          Eliminate manual reordering and streamline procurement. Our system automates the process by generating supply orders as soon as stock levels hit predefined thresholds.  </p>
+      </div>
+      <div class="flex-1 mx-8 flex flex-col items-center my-4">
+        <div class="border-2 rounded-full bg-secondary text-black h-12 w-12 flex justify-center items-center mb-3">
+          3
+        </div>
+        <h3 class="font-montserrat font-medium text-xl mb-2">Analyze and Optimize</h3>
+        <p class="text-center font-montserrat">
+          Use our advanced analytics to gain insights into drug consumption patterns, vendor efficiency, and supply chain performance.  </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="sectionSize bg-secondary" id="features">
+    <div>
+      <h2 class="secondaryTitle bg-underline3 bg-100%">Features</h2>
+    </div>
+    <div class="md:grid md:grid-cols-2 md:grid-rows-2">
+
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='dist/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl">Real-Time Inventory Tracking</h3>
+          <p>
+            Monitor drug stocks across multiple locations and receive automatic alerts for low or expired products.
+
+
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='dist/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl">Vendor Management</h3>
+          <p>
+            Keep track of vendors, manage orders, and monitor delivery statuses seamlessly.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='dist/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl">Batch & Expiry Management</h3>
+          <p>
+            Track drug batches and expiry dates, ensuring that older stock is used first.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='dist/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl">Predictive Analytics</h3>
+          <p>
+            Use advanced data insights to forecast future drug needs based on past usage and trends.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="sectionSize bg-secondary py-0">
+    <div>
+      <h2 class="secondaryTitle bg-underline3 bg-100%">Testimonials</h2>
+    </div>
+    <div class="flex w-full flex-col md:flex-row">
+
+      <div class='flex-1 flex flex-col mx-6 shadow-2xl relative bg-secondary rounded-2xl py-5 px-8 my-8 md:top-24'>
+        <h3 class="font-pt-serif font-normal text-2xl mb-4">
+          Dr. Aisha Patel
+        </h3>
+        
+
+        <div class="flex">
+          
+          <p>cure'O flow has revolutionized how we manage our drug supplies. We no longer worry about stock shortages or expired products. The system is intuitive and a lifesaver for our hospital.</p>
+          
+        </div>
+        
+
+        
+      </div>
+
+      <div class='flex-1 flex flex-col mx-6 shadow-2xl relative bg-secondary rounded-2xl py-5 px-8 my-8 md:top-12'>
+        <h3 class="font-pt-serif font-normal text-2xl mb-4">
+          Johnathan Wells
+        </h3>
+        
+
+        <div class="flex">
+          
+          <p>Thanks to cure'O flow, our procurement process is seamless. Automated supply orders and vendor tracking have saved us time and money. Highly recommend!</p>
+        </div>
+       
+
+        
+      </div>
+
+      <div class='flex-1 flex flex-col mx-6 shadow-2xl relative bg-secondary rounded-2xl py-5 px-8 my-8 md:top-24'>
+        <h3 class="font-pt-serif font-normal text-2xl mb-4">
+          Sarah Lee
+        </h3>
+        
+
+        <div class="flex">
+         
+          <p>The real-time tracking and predictive analytics have made it easy for us to keep drugs in stock without overordering. It's a game changer for hospital inventory management.</p>
+        </div>
+        
+        
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ  -->
+  <section class="sectionSize items-start pt-8 md:pt-36 bg-black text-white">
+    <div>
+      <h2 class="secondaryTitle bg-highlight3 p-10 mb-0 bg-center bg-100%">
+        FAQ
+      </h2>
+    </div>
+
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          How does the system help prevent drug shortages?
+        </div>
+        <img src='dist/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        The system monitors inventory levels in real-time and sends alerts when stocks are low. It also generates automated supply orders to replenish inventory before running out.
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          Can the system track drug expiration dates?
+        </div>
+        <img src='dist/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        Yes, it can track batch numbers and expiry dates, alerting you when drugs are approaching their expiration, ensuring proper stock usage.
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          What kind of reports does the cure O flow provide?
+        </div>
+        <img src='dist/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        You can generate detailed reports on drug usage, vendor performance, stock levels, and procurement efficiency, as well as use predictive analytics to forecast future demand.
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+
+  </section>
+
+  <!-- Footer -->
+  <section class="bg-black sectionSize">
+   
+    <div class="flex mb-8">
+      <a href="#">
+        <img src='dist/assets/logos/Facebook.svg' alt="Facebook logo" class="mx-4" />
+      </a>
+      
+      <a href="#">
+        <img src='dist/assets/logos/Instagram.svg' alt="Instagram logo" class="mx-4" />
+      </a>
+      <a href="#">
+        <img src='dist/assets/logos/Twitter.svg' alt="Twitter logo" class="mx-4" />
+      </a>
+    </div>
+    <div class="text-white font-montserrat text-sm">
+      © 2024 cure'O flow . All rights reserved
+    </div>
+  </section>
+</body>
+
+</html>

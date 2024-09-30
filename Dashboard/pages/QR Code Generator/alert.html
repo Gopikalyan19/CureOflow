@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Inventory System</title>
+    <link rel="stylesheet" href="alert.css">
+</head>
+<body>
+    <h1>Drug Inventory System</h1>
+    <form>
+        <label for="drug-name">Drug Name:</label>
+        <input type="text" id="drug-name" name="drug-name" required><br><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="date" id="expiration-date" name="expiration-date" required><br><br>
+        <label for="unit-price">Unit Price:</label>
+        <input type="number" id="unit-price" name="unit-price" min="0" step="0.01" required><br><br>
+        <label for="total-value">Total Value:</label>
+        <input type="number" id="total-value" name="total-value" min="0" step="0.01" readonly><br><br>
+        <input type="submit" value="Add Drug">
+    </form>
+    <div id="drug-list">
+        <!-- drug list will be displayed here -->
+    </div>
+
+    <script src="alert.js"></script>
+</body>
+</html>
+
+
+
+
+<!------------------
+Calculates the total value of each drug item based on the quantity and unit price
+Displays the total value in the drug list
+Highlights drug items with a high total value (above $100) in green
+Highlights drug items with a low quantity (below 10) in yellow
+Highlights drug items that are expired in red   --------------->
